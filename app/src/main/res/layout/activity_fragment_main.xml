@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_contect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:button="@mipmap/personalhead"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@mipmap/newspaper"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/rg3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:button="@mipmap/edit"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rg4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:button="@mipmap/settings"
+            android:gravity="center" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">师生交流</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="login">姓名：</string>
+    <string name="studentID">学号：</string>
+    <string name="login_botton">登录</string>
+    <string name="contect1">Contect1</string>
+    <string name="contect2">Contect2</string>
+    <string name="contect3">Contect3</string>
+    <string name="contect4">Contect4</string>
+    <string name="toFrangmentString">跳转到app界面</string>
+    <string name="disconnect">离开聊天室</string>
+    <string name="title_activity_edit">编辑</string>
+    <string name="button1">启动活动2</string>
+    <string name="button2">启动活动3</string>
+    <string name="button3">回到活动1</string>
+    <string name="button4">回到活动2</string>
+    <string name="textView">1.</string>
+    <string name="button9">取消</string>
+    <string name="button10">存储</string>
+    <string name="hint">请输入备忘内容</string>
+    <string name="user_name">时轲</string>
+    <string name="weixin">微信号：shike224466</string>
+    <string name="nicheng">昵称：小埋的欧尼酱</string>
+    <string name="sex">性别：</string>
+    <string name="personName">昵称：可爱女孩</string>
+    <string name="IDValue">ID：shike224466</string>
+    <string name="Wallet">Wallet</string>
+    <string name="Favorites">Favorites</string>
+    <string name="MyPhotos">My&#x0020;&#x0020;Photos</string>
+    <string name="Cards">Card&amp;Offers</string>
+    <string name="Sticker">Sticker&#x0020;&#x0020;Gallery</string>
+    <string name="Settings">Vesion&#x0020;Update</string>
+    <string name="IMversion">1.4.2</string>
+</resources>
