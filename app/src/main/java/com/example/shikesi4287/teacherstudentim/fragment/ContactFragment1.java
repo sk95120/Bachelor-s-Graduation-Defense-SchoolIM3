@@ -139,7 +139,7 @@ public class ContactFragment1 extends Fragment{
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
-                            mTextView.setText(mTextView.getText()+ "\n\n" + receiveMsg );
+                            mTextView.setText(receiveMsg+ "\n\n" + mTextView.getText() );
                         }
                     });
                 }
