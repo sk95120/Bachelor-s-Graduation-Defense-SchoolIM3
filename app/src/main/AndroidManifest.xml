@@ -14,11 +14,10 @@
         android:icon="@mipmap/ssim_icon2"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.Light.NoActionBar"
-
-        >
-        <activity android:name=".memo.MemoList"/>
-        <activity android:name=".memo.MemoEdit"/>
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".Activity.MyViewActivity"></activity>
+        <activity android:name=".memo.MemoList" />
+        <activity android:name=".memo.MemoEdit" />
         <activity android:name=".dump.socket.MySocketClient" />
         <activity android:name=".login.loginActivity">
             <intent-filter>

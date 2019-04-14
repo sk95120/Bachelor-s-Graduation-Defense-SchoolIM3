@@ -13,8 +13,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
+import android.os.ParcelFileDescriptor;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
+import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +25,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.shikesi4287.teacherstudentim.Activity.MyViewActivity;
 import com.example.shikesi4287.teacherstudentim.R;
 import java.io.File;
+
+import static android.widget.Toast.LENGTH_LONG;
 
 public class ContactFragment4 extends Fragment{
     private Button but ;
@@ -57,15 +63,28 @@ public class ContactFragment4 extends Fragment{
         mImageView7.setImageDrawable(ContextCompat.getDrawable(getContext(),R.mipmap.gear));
         mImageView8.setImageDrawable(ContextCompat.getDrawable(getContext(),R.mipmap.newinfo));
 
+        mImageView7.setOnClickListener(new CreateSmapleView());
+
         mImageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mImageView8.setImageDrawable(null);
-                Toast.makeText(getContext(),"已经是最新版本！",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),"已经是最新版本！", LENGTH_LONG).show();
             }
         });
         return view;
     }
+
+    private class  CreateSmapleView implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            Log.e("View", "onClick: view",null );
+            Intent it = new Intent();
+            it.setClass(getContext(), MyViewActivity.class);
+            startActivity(it);
+        }
+    }
+
     //后升级
     public void butUpdat(View view){
         String url = "ftp://140.143.243.213/flow/schoolIM.apk";
